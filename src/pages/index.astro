@@ -1,0 +1,29 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import Hero from "../components/Hero";
+import BookCar from "../components/BookCar";
+import PlanTrip from "../components/PlanTrip";
+import PickCar from "../components/PickCar";
+import Banner from "../components/Banner";
+import ChooseUs from "../components/ChooseUs";
+import Testimonials from "../components/Testimonials";
+import Faq from "../components/Faq";
+// import Download from "../components/Download";
+import Footer from "../components/Footer";
+---
+
+<Layout title="Welcome to Astro.">
+  <main>
+    <Hero client:load />
+    <BookCar client:load />
+	<PlanTrip client:load />
+	<PickCar client:load />
+	<Banner client:load />
+	<ChooseUs client:load />
+	<Testimonials client:load />
+	<Faq client:load />
+	<!-- <Download client:load /> -->
+	<Footer client:load />
+  </main>
+</Layout>
